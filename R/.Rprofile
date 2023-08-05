@@ -1,6 +1,11 @@
+if (!require("tidyverse", character.only = TRUE)) {
+    install.packages("tidyverse")
+   # library("tidyverse", character.only = TRUE)
+  }
+
 if (interactive()) {
-  suppressMessages(require(devtools))
-  suppressMessages(require(usethis))
+  suppressMessages(require(tidyverse))
+  #suppressMessages(require(usethis))
 }
 if (Sys.info()[["sysname"]] == "Linux") {
   options(
